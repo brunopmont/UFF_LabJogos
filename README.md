@@ -1,2 +1,7 @@
-# UFF
- tudo de ciência da computação na uff
+# UFF_Lab_Jogos
+
+* CRIAR JANELA
+
+* DESENVOLVER PONG
+
+* DESENVOLVER SPACE INVADERS
