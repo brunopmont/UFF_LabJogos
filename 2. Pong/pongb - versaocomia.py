@@ -11,10 +11,10 @@ tela.set_title("Bruno Porto Monteiro")
 ia = 1 
 
 #SPRITES
-bola = Sprite("Pong/png/bola50.png")
-fundo = GameImage("Pong/png/onepieceredm.jpg")
-pade = Sprite("Pong/png/padbp.png")
-padd = Sprite("Pong/png/padbp.png")
+bola = Sprite("2. Pong/png/bola50.png")
+fundo = GameImage("2. Pong/png/onepieceredm.jpg")
+pade = Sprite("2. Pong/png/padbp.png")
+padd = Sprite("2. Pong/png/padbp.png")
 
 #DEFINIR POSIÇÃO
 pade.set_position(20, tela.height/2-padd.height/2)
