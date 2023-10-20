@@ -9,14 +9,14 @@ cursor = Window.get_mouse() #ATIVAR MOUSE
 teclado = Window.get_keyboard() #ATIVAR TECLADO
 
 #SPRITES
-jogar = Sprite("Space Invaders/png/jogar.png")
-dificuldade = Sprite("Space Invaders/png/dificuldade.png")
-ranking = Sprite("Space Invaders/png/ranking.png")
-sair = Sprite("Space Invaders/png/sair.png")
+jogar = Sprite("png/jogar.png")
+dificuldade = Sprite("png/dificuldade.png")
+ranking = Sprite("png/ranking.png")
+sair = Sprite("png/sair.png")
 
-facil = Sprite("Space Invaders/png/facil.png")
-medio = Sprite("Space Invaders/png/medio.png")
-dificil = Sprite("Space Invaders/png/dificil.png")
+facil = Sprite("png/facil.png")
+medio = Sprite("png/medio.png")
+dificil = Sprite("png/dificil.png")
 
 #POSIÇÕES DOS SPRITES
 jogar.set_position(janela.width/2-jogar.width/2, janela.height/6)
@@ -39,42 +39,42 @@ while True:
 
     #TROCA DE SPRITE DO BOTÃO JOGAR DEPENDENDO DA POSIÇÃO DO CURSOR
         if cursor.is_over_area([janela.width/2-jogar.width/2, janela.height/6], [janela.width/2+jogar.width/2, janela.height/6+jogar.height]):
-            jogar = Sprite("Space Invaders/png/jogar-2.png")
+            jogar = Sprite("png/jogar-2.png")
             jogar.set_position(janela.width/2-jogar.width/2, janela.height/6)
             if cursor.is_button_pressed(1):
                 janela.clear()
                 telanum = 1
         else:
-            jogar = Sprite("Space Invaders/png/jogar.png")
+            jogar = Sprite("png/jogar.png")
             jogar.set_position(janela.width/2-jogar.width/2, janela.height/6)
 
         #TROCA DE SPRITE DO BOTÃO JOGAR DIFICULDADE DA POSIÇÃO DO CURSOR
         if cursor.is_over_area([janela.width/2-jogar.width/2, 2*janela.height/6], [janela.width/2+jogar.width/2, 2*janela.height/6+jogar.height]):
-            dificuldade = Sprite("Space Invaders/png/dificuldade-2.png")
+            dificuldade = Sprite("png/dificuldade-2.png")
             dificuldade.set_position(janela.width/2-jogar.width/2, 2*janela.height/6)
             if cursor.is_button_pressed(1):
                 janela.clear()
                 telanum = 2
         else:
-            dificuldade = Sprite("Space Invaders/png/dificuldade.png")
+            dificuldade = Sprite("png/dificuldade.png")
             dificuldade.set_position(janela.width/2-jogar.width/2, 2*janela.height/6) 
 
         #TROCA DE SPRITE DO BOTÃO RANKING DEPENDENDO DA POSIÇÃO DO CURSOR
         if cursor.is_over_area([janela.width/2-jogar.width/2, 3*janela.height/6], [janela.width/2+jogar.width/2, 3*janela.height/6+jogar.height]):
-            ranking = Sprite("Space Invaders/png/ranking-2.png")
+            ranking = Sprite("png/ranking-2.png")
             ranking.set_position(janela.width/2-jogar.width/2, 3*janela.height/6)
         else:
-            ranking = Sprite("Space Invaders/png/ranking.png")
+            ranking = Sprite("png/ranking.png")
             ranking.set_position(janela.width/2-jogar.width/2, 3*janela.height/6)
 
        #TROCA DE SPRITE DO BOTÃO SAIR DEPENDENDO DA POSIÇÃO DO CURSOR
         if cursor.is_over_area([janela.width/2-jogar.width/2, 4*janela.height/6], [janela.width/2+jogar.width/2, 4*janela.height/6+jogar.height]):
-            sair = Sprite("Space Invaders/png/sair-2.png")
+            sair = Sprite("png/sair-2.png")
             sair.set_position(janela.width/2-jogar.width/2, 4*janela.height/6)
             if cursor.is_button_pressed(1):
                 exit()
         else:
-            sair = Sprite("Space Invaders/png/sair.png")
+            sair = Sprite("png/sair.png")
             sair.set_position(janela.width/2-jogar.width/2, 4*janela.height/6)
     
     if telanum == 1 and teclado.key_pressed("esc"): #CASO ESTEJA NA TELA DO JOGO E APERTAR ESC, VOLTAR PRO MENU
@@ -88,33 +88,33 @@ while True:
 
         #TROCA DE SPRITE DO BOTÃO FÁCIL DEPENDENDO DA POSIÇÃO DO CURSOR
         if cursor.is_over_area([janela.width/2-jogar.width/2, janela.height/6], [janela.width/2+jogar.width/2, janela.height/6+jogar.height]):
-            facil = Sprite("Space Invaders/png/facil-2.png")
+            facil = Sprite("png/facil-2.png")
             facil.set_position(janela.width/2-jogar.width/2, janela.height/6)
             if cursor.is_button_pressed(1):
                 janela.clear()
                 telanum = 1
         else:
-            facil = Sprite("Space Invaders/png/facil.png")
+            facil = Sprite("png/facil.png")
             facil.set_position(janela.width/2-jogar.width/2, janela.height/6)
 
         #TROCA DE SPRITE DO BOTÃO MÉDIO DEPENDENDO DA POSIÇÃO DO CURSOR
         if cursor.is_over_area([janela.width/2-jogar.width/2, 3*janela.height/6], [janela.width/2+jogar.width/2, 3*janela.height/6+jogar.height]):
-            medio = Sprite("Space Invaders/png/medio-2.png")
+            medio = Sprite("png/medio-2.png")
             medio.set_position(janela.width/2-jogar.width/2, 3*janela.height/6)
             if cursor.is_button_pressed(1):
                 janela.clear()
                 telanum = 1
         else:
-            medio = Sprite("Space Invaders/png/medio.png")
+            medio = Sprite("png/medio.png")
             medio.set_position(janela.width/2-jogar.width/2, 3*janela.height/6)
 
         #TROCA DO BOTÃO DIFÍCIL DEPENDENDO DA POSIÇÃO DO CURSOR
         if cursor.is_over_area([janela.width/2-jogar.width/2, 5*janela.height/6], [janela.width/2+jogar.width/2, 5*janela.height/6+jogar.height]):
-            dificil = Sprite("Space Invaders/png/dificil-2.png")
+            dificil = Sprite("png/dificil-2.png")
             dificil.set_position(janela.width/2-jogar.width/2, 5*janela.height/6)
             if cursor.is_button_pressed(1):
                 janela.clear()
                 telanum = 1
         else:
-            dificil = Sprite("Space Invaders/png/dificil.png")
+            dificil = Sprite("png/dificil.png")
             dificil.set_position(janela.width/2-jogar.width/2, 5*janela.height/6)
