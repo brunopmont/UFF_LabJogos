@@ -40,6 +40,7 @@ while True:
         zumbi.move_y(janela.delta_time() * -velmob)
     else:
         zumbi.move_y(janela.delta_time() * velmob)
+        
     janela.update()
     fundo.draw()
     player.draw()
