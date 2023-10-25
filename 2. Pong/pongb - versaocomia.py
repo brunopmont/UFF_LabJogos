@@ -72,10 +72,10 @@ while True:
     else:
         if bola.y >= padd.y:
             if padd.y + padd.height + 1 < tela.height:
-                padd.move_y(400* tela.delta_time())
+                padd.move_y(500* tela.delta_time())
         else:
             if padd.y - 1 > 0:
-                padd.move_y(-400* tela.delta_time())
+                padd.move_y(-500* tela.delta_time())
 
     #COLISÃO DO PAD COM A BOLINHA
     if Collision.perfect_collision(bola, padd):
