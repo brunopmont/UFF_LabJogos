@@ -2,9 +2,10 @@ from PPlay.window import *
 from PPlay.sprite import *
 from PPlay.gameimage import *
 
-janela = Window(600, 600)
+janela = Window(1080, 720)
 teclado = Window.get_keyboard()
 fundo = GameImage("4. Vampiro Carioca/png/fundo_jogo.png")
+janela.set_title("Vampiro Carioca")
 
 player = Sprite("4. Vampiro Carioca/png/player.png")
 esqueleto = Sprite("4. Vampiro Carioca/png/esqueleto.png")
@@ -40,7 +41,7 @@ while True:
         zumbi.move_y(janela.delta_time() * -velmob)
     else:
         zumbi.move_y(janela.delta_time() * velmob)
-        
+
     janela.update()
     fundo.draw()
     player.draw()
